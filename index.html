@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACL 2026 Demo Page - Anonymous Submission</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .sample-grid {
+            display: grid;
+            gap: 30px;
+        }
+        
+        .sample-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .sample-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .sample-title {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .audio-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .audio-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .audio-label {
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+        
+        audio {
+            width: 100%;
+            height: 40px;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 5px;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Audio Demo Page</h1>
+        <p class="subtitle">ACL 2026 Anonymous Submission</p>
+        
+        <!-- Accent Conversion Section -->
+        <div class="section">
+            <h2 class="section-title">Accent Conversion Samples</h2>
+            
+            <div class="sample-grid">
+                <div class="sample-card">
+                    <div class="sample-title">Sample 1: ABA_a0407</div>
+                    <div class="audio-group">
+                        <div class="audio-item">
+                            <div class="audio-label">📝 Content</div>
+                            <audio controls>
+                                <source src="accent_evalset/content/ABA_a0407.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audio-item">
+                            <div class="audio-label">🔄 Conversion</div>
+                            <audio controls>
+                                <source src="accent_evalset/conversion/ABA_a0407.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audio-item">
+                            <div class="audio-label">⭐ Reference</div>
+                            <audio controls>
+                                <source src="accent_evalset/reference/ABA_a0407.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sample-card">
+                    <div class="sample-title">Sample 2: BWC_b0174</div>
+                    <div class="audio-group">
+                        <div class="audio-item">
+                            <div class="audio-label">📝 Content</div>
+                            <audio controls>
+                                <source src="accent_evalset/content/BWC_b0174.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audio-item">
+                            <div class="audio-label">🔄 Conversion</div>
+                            <audio controls>
+                                <source src="accent_evalset/conversion/BWC_b0174.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audio-item">
+                            <div class="audio-label">⭐ Reference</div>
+                            <audio controls>
+                                <source src="accent_evalset/reference/BWC_a0407.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sample-card">
+                    <div class="sample-title">Sample 3: NCC_b0204</div>
+                    <div class="audio-group">
+                        <div class="audio-item">
+                            <div class="audio-label">📝 Content</div>
+                            <audio controls>
+                                <source src="accent_evalset/content/NCC_b0204.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audio-item">
+                            <div class="audio-label">🔄 Conversion</div>
+                            <audio controls>
+                                <source src="accent_evalset/conversion/NCC_b0204.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audio-item">
+                            <div class="audio-label">⭐ Reference</div>
+                            <audio controls>
+                                <source src="accent_evalset/reference/NCC_a0407.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Emotion Conversion Section -->
+        <div class="section">
+            <h2 class="section-title">Emotion Conversion Samples</h2>
+            
+            <div class="sample-grid">
+                <div class="sample-card">
+                    <div class="sample-title">Sample 1: 0014_000176</div>
+                    <div class="audio-group">
+                        <div class="audio-item">
+                            <div class="audio-label">📝 Content</div>
+                            <audio controls>
+                                <source src="emotion_evalset/content/0014_000176.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audio-item">
+                            <div class="audio-label">🔄 Conversion</div>
+                            <audio controls>
+                                <source src="emotion_evalset/conversion/0014_000176.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audio-item">
+                            <div class="audio-label">⭐ Reference</div>
+                            <audio controls>
+                                <source src="emotion_evalset/reference/0014_000176.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sample-card">
+                    <div class="sample-title">Sample 2: 0015_000526</div>
+                    <div class="audio-group">
+                        <div class="audio-item">
+                            <div class="audio-label">📝 Content</div>
+                            <audio controls>
+                                <source src="emotion_evalset/content/0015_000526.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audio-item">
+                            <div class="audio-label">🔄 Conversion</div>
+                            <audio controls>
+                                <source src="emotion_evalset/conversion/0015_000526.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audio-item">
+                            <div class="audio-label">⭐ Reference</div>
+                            <audio controls>
+                                <source src="emotion_evalset/reference/0015_000526.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="note">
+            <strong>📌 Note:</strong> This is a demo page for anonymous submission to ACL 2026. 
+            All identifying information has been removed to maintain anonymity during the review process.
+        </div>
+    </div>
+</body>
+</html>
+
